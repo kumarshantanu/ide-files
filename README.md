@@ -9,7 +9,9 @@ Create Leiningen project followed by creating IDE files.
 ```bash
 $ lein new foo
 $ cd foo
-$ lein new ide-files
+$ lein new ide-files all     # creates IDE files for both Eclipse and IDEA
+$ lein new ide-files eclipse # creates only Eclipse files
+$ lein new ide-files idea    # created only IDEA files
 ```
 
 ## Getting in touch
