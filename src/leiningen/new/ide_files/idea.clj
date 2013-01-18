@@ -1,18 +1,18 @@
 (ns leiningen.new.ide-files.idea
-  (:use leiningen.new.templates))
+  (:require [leiningen.new.ide-files.util :as util])
+  (:use [leiningen.new.templates :only [renderer sanitize]]))
 
 
 (def render (renderer "ide_files/idea"))
 
 
-
 (defn idea
   [proj-name]
-  (println "Generating IntelliJ IDEA project files for '" proj-name \')
+  (util/announce "IntelliJ IDEA" proj-name)
   (let [data {:name proj-name
               :sanitized (sanitize proj-name)}
   	r #(render % data)]
-    (->files data
+    (util/files data
       [(str proj-name ".iml") (r "project.iml")]
       ".idea"
       [".idea/.name"          (r "dot-idea/dot-name")]
