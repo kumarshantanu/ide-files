@@ -5,6 +5,7 @@
 (def render (renderer "ide_files/idea"))
 
 
+
 (defn idea
   [proj-name]
   (println "Generating IntelliJ IDEA project files for '" proj-name \')
@@ -28,4 +29,4 @@
       ".idea/libraries"
       [".idea/libraries/clojure_1_3_0.xml"     (r "dot-idea/libraries/clojure_1_3_0.xml")]
       ".idea/scopes"
-      [".idea/scopes"                          (r "dot-idea/scopes/scope_settings.xml")])))
+      [".idea/scope_settings"                  (r "dot-idea/scopes/scope_settings.xml")])))
