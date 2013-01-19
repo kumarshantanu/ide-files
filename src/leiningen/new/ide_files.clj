@@ -3,8 +3,6 @@
             [leiningen.new.ide-files.eclipse :as eclipse]
             [leiningen.new.ide-files.idea    :as idea]))
 
-(def ^:const ides ["eclipse" "idea"])
-
 (defn pwd-name
   []
   (-> (java.io.File. ".")
@@ -23,7 +21,7 @@
   "Generate files for specified IDE"
   [ide]
   (case (str/lower-case ide)
-    "all"      (doseq [each ides] (ide-files each))
+    "all"      (dorun (map ide-files ["eclipse" "idea"]))
     "eclipse"  (eclipse/eclipse (pwd-name))
     "idea"     (idea/idea (pwd-name))
     "intellij" (idea/idea (pwd-name))
