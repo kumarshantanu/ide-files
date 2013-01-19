@@ -4,6 +4,8 @@ A Leiningen template for generating IDE files for existing projects.
 
 ## Installation
 
+Latest stable version on Clojars: [0.1.0](https://clojars.org/ide-files/lein-template)
+
 No installation is required if you are using Leiningen 2--templates are
 automatically downloaded on first use. Lein 1.x users may need to refer
 https://github.com/Raynes/lein-newnew
