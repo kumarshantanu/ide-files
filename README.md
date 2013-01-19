@@ -4,6 +4,9 @@ A Leiningen template for creating IDE files.
 
 ## Usage
 
+This template is not on Clojars yet. Please clone this repo and run
+`lein install` to install locally.
+
 Create Leiningen project followed by creating IDE files.
 
 ```bash
