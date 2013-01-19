@@ -1,11 +1,19 @@
 # ide-files
 
-A Leiningen template for creating IDE files.
+A Leiningen template for generating IDE files for existing projects.
 
-## Usage
+## Instalation
 
 This template is not on Clojars yet. Please clone this repo and run
-`lein install` to install locally.
+`lein install` to install locally. Then depend on
+
+``` clojure
+[ide-files/lein-template    "0.1.0-SNAPSHOT"]
+```
+
+in your `~/.lein/profiles.clj`.
+
+## Usage
 
 Create Leiningen project followed by creating IDE files.
 
