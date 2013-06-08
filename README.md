@@ -1,6 +1,7 @@
 # ide-files
 
 A Leiningen template for generating IDE files for existing projects.
+**Superseded by https://github.com/kumarshantanu/lein-idefiles**
 
 ## Installation
 
